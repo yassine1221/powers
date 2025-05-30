@@ -1,0 +1,155 @@
+.hero-section {
+    margin-top: -2rem;
+    background-color: #28a745;  /* Light green */
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '\f085';  /* Cog icon */
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    font-size: 15rem;
+    opacity: 0.1;
+    right: -2rem;
+    top: -2rem;
+    transform: rotate(15deg);
+}
+
+.section {
+    padding: 4rem 0;
+    background-color: #f6fff8;  /* Very light green background */
+    color: #333;  /* Dark text for better readability */
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.section::after {
+    content: '\f5fd';  /* Palette icon */
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.05;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+#laser::after {
+    content: '\f0c3';  /* Flask icon */
+}
+
+#enseignes::after {
+    content: '\f51f';  /* Store icon */
+}
+
+#design::after {
+    content: '\f53f';  /* Palette icon */
+}
+
+.section h2 {
+    color: #28a745;  /* Light green */
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.section ul li {
+    color: #333;  /* Dark text */
+    display: flex;
+    align-items: center;
+}
+
+.section ul li::before {
+    content: '\f058';  /* Check circle icon */
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5rem;
+    color: #34d058;  /* Lighter green */
+}
+
+.bg-white, .bg-light {
+    background-color: white !important;
+    border-radius: 8px;
+    border-top: 4px solid #34d058;  /* Lighter green accent */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.1);
+}
+
+.bg-white h4, .bg-light h4 {
+    color: #28a745;  /* Light green */
+    display: flex;
+    align-items: center;
+}
+
+.bg-white h4::before, .bg-light h4::before {
+    content: '\f0c9';  /* List icon */
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5rem;
+    color: #34d058;  /* Lighter green */
+}
+
+.bg-white ul li, .bg-light ul li,
+.bg-white p, .bg-light p {
+    color: #333;  /* Dark text for better readability */
+    display: flex;
+    align-items: center;
+}
+
+.bg-white ul li::before, .bg-light ul li::before {
+    content: '\f105';  /* Angle right icon */
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5rem;
+    color: #34d058;  /* Lighter green */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#laser { animation-delay: 0.2s; }
+#enseignes { animation-delay: 0.4s; }
+#design { animation-delay: 0.6s; }
+
+.btn-primary {
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    background-color: #34d058;  /* Lighter green */
+    border-color: #34d058;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-primary::before {
+    content: '\f0e0';  /* Envelope icon */
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.5rem;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: #28a745;  /* Light green */
+    border-color: #28a745;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+.carousel-inner img {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.02);
+}
+

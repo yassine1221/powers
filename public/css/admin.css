@@ -1,0 +1,101 @@
+/* Sidebar Styles */
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+.nav-link {
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    background-color: #0d6efd;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Content Area Styles */
+.card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 2px solid #f8f9fa;
+    padding: 1rem 1.25rem;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Button Styles */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Form Controls */
+.form-select-sm {
+    padding: 0.25rem 2rem 0.25rem 0.5rem;
+}
+
+/* Status Badge */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000;
+}
+
+.badge.bg-info {
+    background-color: #0dcaf0 !important;
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #dee2e6;
+}
+
+/* Utility Classes */
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
