@@ -1,6 +1,6 @@
-# Perfect Signs
+# Powers Signs
 
-Perfect Signs est une application web développée avec Laravel pour la gestion d'une entreprise de signalétique.
+Powers Signs est une application web développée avec Laravel pour la gestion d'une entreprise de signalétique
 
 ## Fonctionnalités
 
